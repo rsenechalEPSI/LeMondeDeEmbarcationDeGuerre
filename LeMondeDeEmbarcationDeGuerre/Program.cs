@@ -8,7 +8,8 @@ namespace LeMondeDeEmbarcationDeGuerre
 
         static void Main(string[] args)
         {
-            
+            Character character = new Character();
+
         }
 
 
