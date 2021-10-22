@@ -11,6 +11,11 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
             _value = true;
         }
 
+        public void Die()
+        {
+            _value = false;
+        }
+
         public void DisplayState()
         {
             Console.WriteLine("Alive : " + _value);

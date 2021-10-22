@@ -1,4 +1,6 @@
-﻿namespace LeMondeDeEmbarcationDeGuerre.Core.Models
+﻿using System;
+
+namespace LeMondeDeEmbarcationDeGuerre.Core.Models
 {
     public class CharacterLevel
     {
@@ -7,6 +9,11 @@
         public CharacterLevel()
         {
             _level = 1;
+        }
+
+        public void DisplayLevel()
+        {
+            Console.WriteLine("Level : " + _level);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
 
         internal void SubstractDamage(Damage damage)
         {
-            damage.Substract(_healthPoint);
+            damage.Substract(_healthPoint, _livingState);
         }
 
         internal void HealCharacter(Heal heal)

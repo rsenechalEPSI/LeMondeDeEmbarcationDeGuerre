@@ -13,7 +13,6 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
             _characterState = new CharacterState();
         }
 
-
         public void Attack(Character character2)
         {
             character2.TakeDamage(new Damage());
@@ -37,6 +36,7 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
         {
             Console.WriteLine("Infomation personnage : \n");
             _characterState.DisplayInfoCharacterState();
+            _characterLevel.DisplayLevel();
             Console.WriteLine("===========================\n");
         }
     }

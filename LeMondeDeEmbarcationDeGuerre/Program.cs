@@ -21,6 +21,10 @@ namespace LeMondeDeEmbarcationDeGuerre
                 witcher.Attack(paysan);
                 witcher.DisplayInfo();
                 paysan.DisplayInfo();
+
+                witcher.Heal(paysan);
+                witcher.DisplayInfo();
+                paysan.DisplayInfo();
                 break;
             }
         }

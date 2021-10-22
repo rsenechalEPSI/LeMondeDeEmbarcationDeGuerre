@@ -11,22 +11,25 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
             _value = 1000;
         }
 
-        public void Substract()
+        public void Substract(LivingState livingState)
         {
             if(_value - 1 >= 0)
             {
                 _value -= 1;
             }
-            
+            if(_value - 1 < 0)
+            {
+                livingState.Die();
+            }
         }
 
         public void Add()
         {
-            if(_value < 0)
+            if(_value <= 0)
             {
                 return;
             }
-            if(_value + 1 < 1000)
+            if(_value + 1 <= 1000)
             {
                 _value += 1;
             }
