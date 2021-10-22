@@ -1,4 +1,6 @@
-﻿namespace LeMondeDeEmbarcationDeGuerre.Core.Models
+﻿using System;
+
+namespace LeMondeDeEmbarcationDeGuerre.Core.Models
 {
     public class Character
     {
@@ -12,15 +14,23 @@
         }
 
 
-        public void Attack(Character char2)
+        public void Attack(Character character2)
         {
-            char2.TakeDamage(new Damage());
+            character2.TakeDamage(new Damage());
         }
-
         internal void TakeDamage(Damage damage)
         {
             _characterState.SubstractDamage(damage);
+        }
 
+        public void Heal(Character character2)
+        {
+            character2.HealCharacter(new Heal());
+        }
+
+        private void HealCharacter(Heal heal)
+        {
+            _characterState.HealCharacter(heal);
         }
     }
 }

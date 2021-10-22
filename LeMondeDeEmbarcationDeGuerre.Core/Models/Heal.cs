@@ -1,24 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LeMondeDeEmbarcationDeGuerre.Core.Models
 {
-    public class Damage
+    public class Heal
     {
         private int _value;
-
-        public Damage()
+        public Heal()
         {
             Random r = new Random();
             _value = r.Next(50, 100);
         }
 
-        public void Substract(HealthPoint hp)
+        public void Add(HealthPoint healthPoint)
         {
-            while(_value < 0)
+            while(_value > 0)
             {
-                hp.Substract();
+                healthPoint.Substract();
                 _value -= 1;
             }
         }
+
     }
 }

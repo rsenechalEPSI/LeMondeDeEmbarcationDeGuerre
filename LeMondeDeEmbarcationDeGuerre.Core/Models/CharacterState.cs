@@ -1,4 +1,6 @@
-﻿namespace LeMondeDeEmbarcationDeGuerre.Core.Models
+﻿using System;
+
+namespace LeMondeDeEmbarcationDeGuerre.Core.Models
 {
     public class CharacterState
     {
@@ -14,6 +16,11 @@
         internal void SubstractDamage(Damage damage)
         {
             damage.Substract(_healthPoint);
+        }
+
+        internal void HealCharacter(Heal heal)
+        {
+            heal.Add(_healthPoint);
         }
     }
 }

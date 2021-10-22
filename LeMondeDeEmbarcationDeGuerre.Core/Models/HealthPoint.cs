@@ -15,5 +15,10 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
         {
             _value -= 1;
         }
+
+        internal void Add()
+        {
+            _value += 1;
+        }
     }
 }
