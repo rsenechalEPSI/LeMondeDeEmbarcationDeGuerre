@@ -9,9 +9,5 @@
             _value = true;
         }
 
-        internal bool IsAlive()
-        {
-            return _value;
-        }
     }
 }

@@ -11,11 +11,6 @@
             _livingState = new LivingState();
         }
 
-        internal bool IsAlive()
-        {
-            return _livingState.IsAlive();
-        }
-
         internal void SubstractDamage(Damage damage)
         {
             damage.Substract(_healthPoint);

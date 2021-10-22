@@ -1,4 +1,6 @@
-﻿namespace LeMondeDeEmbarcationDeGuerre.Core.Models
+﻿using System;
+
+namespace LeMondeDeEmbarcationDeGuerre.Core.Models
 {
     public class HealthPoint
     {
@@ -9,7 +11,6 @@
             _value = 1000;
         }
 
-        //Soustraction
         internal void Substract()
         {
             _value -= 1;
