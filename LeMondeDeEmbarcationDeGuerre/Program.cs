@@ -8,8 +8,21 @@ namespace LeMondeDeEmbarcationDeGuerre
 
         static void Main(string[] args)
         {
-            Character character = new Character();
+            Character witcher = new Character();
+            Character paysan = new Character();
+
             
+
+            while (true)
+            {
+                witcher.DisplayInfo();
+                paysan.DisplayInfo();
+
+                witcher.Attack(paysan);
+                witcher.DisplayInfo();
+                paysan.DisplayInfo();
+                break;
+            }
         }
 
 

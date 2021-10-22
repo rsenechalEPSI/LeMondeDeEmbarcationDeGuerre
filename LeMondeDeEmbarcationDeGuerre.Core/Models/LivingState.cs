@@ -1,4 +1,6 @@
-﻿namespace LeMondeDeEmbarcationDeGuerre.Core.Models
+﻿using System;
+
+namespace LeMondeDeEmbarcationDeGuerre.Core.Models
 {
     public class LivingState
     {
@@ -9,5 +11,9 @@
             _value = true;
         }
 
+        public void DisplayState()
+        {
+            Console.WriteLine("Alive : " + _value);
+        }
     }
 }

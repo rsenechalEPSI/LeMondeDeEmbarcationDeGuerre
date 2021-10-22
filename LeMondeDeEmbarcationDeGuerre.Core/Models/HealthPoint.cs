@@ -11,14 +11,30 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
             _value = 1000;
         }
 
-        internal void Substract()
+        public void Substract()
         {
-            _value -= 1;
+            if(_value - 1 >= 0)
+            {
+                _value -= 1;
+            }
+            
         }
 
-        internal void Add()
+        public void Add()
         {
-            _value += 1;
+            if(_value < 0)
+            {
+                return;
+            }
+            if(_value + 1 < 1000)
+            {
+                _value += 1;
+            }
+        }
+
+        public void DisplayHealth()
+        {
+            Console.WriteLine("HP : " + _value.ToString());
         }
     }
 }

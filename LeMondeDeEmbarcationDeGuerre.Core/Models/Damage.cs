@@ -14,7 +14,7 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
 
         public void Substract(HealthPoint hp)
         {
-            while(_value < 0)
+            while(_value > 0)
             {
                 hp.Substract();
                 _value -= 1;

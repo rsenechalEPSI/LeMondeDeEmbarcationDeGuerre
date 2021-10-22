@@ -22,5 +22,11 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
         {
             heal.Add(_healthPoint);
         }
+
+        internal void DisplayInfoCharacterState()
+        {
+            _healthPoint.DisplayHealth();
+            _livingState.DisplayState();
+        }
     }
 }

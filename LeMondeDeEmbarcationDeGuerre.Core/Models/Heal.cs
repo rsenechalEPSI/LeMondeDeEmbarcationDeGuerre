@@ -19,7 +19,7 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
         {
             while(_value > 0)
             {
-                healthPoint.Substract();
+                healthPoint.Add();
                 _value -= 1;
             }
         }

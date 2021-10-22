@@ -32,5 +32,12 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
         {
             _characterState.HealCharacter(heal);
         }
+
+        public void DisplayInfo()
+        {
+            Console.WriteLine("Infomation personnage : \n");
+            _characterState.DisplayInfoCharacterState();
+            Console.WriteLine("===========================\n");
+        }
     }
 }
