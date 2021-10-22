@@ -8,9 +8,8 @@ namespace LeMondeDeEmbarcationDeGuerre.Core.Models
 
         public Damage()
         {
-            //Random r = new Random();
-            //_value = r.Next(50, 100);
-            _value = 1000;
+            Random r = new Random();
+            _value = r.Next(50, 100);
         }
 
         public void Substract(HealthPoint healthPoint, LivingState livingState)
