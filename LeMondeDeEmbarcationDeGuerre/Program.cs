@@ -1,5 +1,6 @@
 ﻿using LeMondeDeEmbarcationDeGuerre.Core.Models;
 using System;
+using System.Collections.Generic;
 
 namespace LeMondeDeEmbarcationDeGuerre
 {
@@ -8,15 +9,17 @@ namespace LeMondeDeEmbarcationDeGuerre
         static void Main(string[] args)
         {
             Character witcher = new Character();
+
             Character paysan = new Character();
+
             LaunchGame(witcher, paysan);
         }
 
-        static void LaunchGame(Character character1, Character character2)
+        static void LaunchGame(Character hero, Character ennemy)
         {
-            Fight(character1, character2);
-            Heal(character1, character2);
-            Continue(character1, character2);
+            Fight(hero, ennemy);
+            Heal(hero, ennemy);
+            Continue(hero, ennemy);
         }
 
         static void Fight(Character character1, Character character2)
